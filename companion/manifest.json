@@ -1,0 +1,22 @@
+{
+  "id": "kanata",
+  "name": "kanata",
+  "shortname": "kanata",
+  "description": "Monitor and control kanata keyboard layer state",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": "",
+  "bugs": "",
+  "maintainers": [{ "name": "ilter", "email": "ilter@okeg.com.au" }],
+  "legacyIds": [],
+  "runtime": {
+    "type": "node18",
+    "api": "nodejs-ipc",
+    "apiVersion": "1.12.1",
+    "entrypoint": "../index.js"
+  },
+  "manufacturer": "kanata",
+  "products": ["kanata"],
+  "keywords": ["keyboard", "layer", "kanata"],
+  "isPrerelease": false
+}

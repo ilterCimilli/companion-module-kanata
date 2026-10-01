@@ -1,0 +1,12 @@
+{
+  "name": "companion-kanata",
+  "version": "0.1.0",
+  "description": "Companion module for kanata — monitor and change keyboard layers",
+  "main": "index.js",
+  "keywords": ["companion-module"],
+  "author": "ilter@okeg.com.au",
+  "license": "MIT",
+  "dependencies": {
+    "@companion-module/base": "^1.12.1"
+  }
+}
