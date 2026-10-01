@@ -13,7 +13,7 @@
 
 ## Requirements
 
-- Bitfocus Companion 3.x
+- Bitfocus Companion 5.x
 - kanata with TCP server enabled (`tcp-server-address` in `defcfg`, or `--port` flag)
 - For color + icon support: kanata built from [PR #2204](https://github.com/jtroo/kanata/pull/2204) or later
 
@@ -37,6 +37,8 @@ Then in Companion: **Add connection → search "kanata"**.
 | `$(kanata:color_int)` | Layer color as Companion integer (for `bgcolor`) |
 | `$(kanata:layer_icon)` | Base64 PNG for use in `png64` fields — updates on every layer change |
 | `$(kanata:layer_icon_name)` | Icon name string (e.g. `kanata-base`) — use in `$(image:...)` text expressions |
+| `$(kanata:cfg_text)` | Raw config text for the current layer (from `RequestCurrentLayerInfo`) |
+| `$(kanata:message)` | Last `MessagePush` string received from kanata |
 
 ## Configuration
 
