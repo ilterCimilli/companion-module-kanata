@@ -11,6 +11,8 @@
 - **Actions** — switch to any layer, reload config
 - **Feedbacks** — `layer_color` (bgcolor follows active layer), `layer_is_not` (dim inactive buttons)
 
+![Companion buttons showing kanata layers with colors and icons](docs/companion-screenshot.png)
+
 ## Requirements
 
 - Bitfocus Companion 5.x
