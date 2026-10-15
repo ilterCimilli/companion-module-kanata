@@ -161,7 +161,10 @@ function _applyLayer(layer, tcpColor, tcpIcon) {
 	// base64 PNG for use in png64 fields; falls back to empty string if file absent
 	const layer_icon = _loadIcon(layer_icon_name)
 
-	self.setVariableValues({ layer, color_hex, color_int, layer_icon, layer_icon_name })
+	const LAYER_LABELS = { shift: '⇧', command: '⌘', option: '⌥', ctrl: '⌃', win: '⊞', alt: '⌥' }
+	const layer_label = LAYER_LABELS[layer] ?? layer
+
+	self.setVariableValues({ layer, layer_label, color_hex, color_int, layer_icon, layer_icon_name })
 	self.checkFeedbacks('layer_is', 'layer_is_not', 'layer_color')
 }
 

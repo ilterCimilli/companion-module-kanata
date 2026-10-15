@@ -5,7 +5,8 @@ function initVariables() {
 
 	self.setVariableDefinitions([
 		// Current layer state
-		{ variableId: 'layer',      name: 'Current layer name' },
+		{ variableId: 'layer',       name: 'Current layer name' },
+		{ variableId: 'layer_label', name: 'Current layer label (icon symbol, e.g. ⇧ ⌘ ⌥ ⌃)' },
 		{ variableId: 'color_hex',  name: 'Layer color (CSS hex, e.g. #c84090)' },
 		{ variableId: 'color_int',  name: 'Layer color (decimal int for combineRgb expressions)' },
 		{ variableId: 'layer_icon',      name: 'Current layer icon (base64 PNG for png64 field)' },
@@ -18,6 +19,7 @@ function initVariables() {
 
 	self.setVariableValues({
 		layer: '',
+		layer_label: '',
 		color_hex: '',
 		color_int: '',
 		layer_icon: '',
