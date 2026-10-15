@@ -62,10 +62,11 @@ function initFeedbacks() {
 			description: "Button background updates to the current layer's color automatically",
 			options: [],
 			callback: () => {
-				// color_int is kept as a string variable; parse it back for combineRgb
-				const raw = parseInt(self.getVariableValue('color_int') || '0', 10)
+				// color_int is a string; use null-check not truthiness — 0 (black) is valid
+				const str = self.getVariableValue('color_int')
+				const raw = (str != null && str !== '') ? parseInt(str, 10) : null
 				return {
-					bgcolor: raw || combineRgb(40, 40, 40),
+					bgcolor: (raw != null && !isNaN(raw)) ? raw : combineRgb(40, 40, 40),
 					color: combineRgb(255, 255, 255),
 				}
 			},
